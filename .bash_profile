@@ -7,9 +7,13 @@ export TERM='xterm-256color'
 # Aliases
 alias ls='ls -F -G'
 alias ll='ls -tlhF -G'
+alias la='ls -F -G -a'
 alias grep='grep --color=auto'
 alias du='du -kh'
 alias df='df -kTh'
+
+alias ~='cd ~'
+alias ..='cd ..'
 
 function _update_ps1()
 {
