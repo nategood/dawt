@@ -1,0 +1,25 @@
+[user]
+	name = Nathan
+	email = nate.good@showclix.com
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %Cblue%an%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    co = checkout
+    st = status
+    a = add -p
+[color]
+    pager = true
+    ui = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
