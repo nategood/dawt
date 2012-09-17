@@ -15,7 +15,8 @@ function _update_ps1()
 {
     branch_name="$(git symbolic-ref HEAD 2>/dev/null)"
     branch_name=${branch_name##refs/heads/}
-    export PS1="$branch_name# "
+    dir_name=${PWD##*/}
+    export PS1="$dir_name $branch_name# "
 }
 
 export PROMPT_COMMAND="_update_ps1"
