@@ -3,6 +3,7 @@ export PS1='# '
 export EDITOR='vim'
 export PATH=$PATH:~/pear/bin
 export TERM='xterm-256color'
+export GOPATH=~/code/go
 
 # Aliases
 alias ls='ls -F -G'
@@ -11,6 +12,7 @@ alias la='ls -F -G -a'
 alias grep='grep --color=auto'
 alias du='du -kh'
 alias df='df -kTh'
+alias flush="sudo killall -HUP mDNSResponder && echo Flushed DNS"
 
 alias ~='cd ~'
 alias ..='cd ..'
